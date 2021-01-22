@@ -14,7 +14,8 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '$a src-git diy https://github.com/jaydiao521/diy' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 git clone https://github.com/garypang13/luci-app-bypass.git package/lean/luci-app-bypass
-git clone https://github.com/garypang13/luci-app-dnsfilter.git package/lean/luci-app-dnsfilter
