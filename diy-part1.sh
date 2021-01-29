@@ -11,10 +11,10 @@
 #
 
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+# sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git garypang https://github.com/garypang13/openwrt-packages' feeds.conf.default
-sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
+# sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
