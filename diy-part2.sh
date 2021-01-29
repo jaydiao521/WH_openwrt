@@ -27,4 +27,4 @@ sed -i "10i uci commit network\n" ./package/lean/default-settings/files/zzz-defa
 sed -i "s/DISTRIB_DESCRIPTION='OpenWrt '/DISTRIB_DESCRIPTION='OpenWrt by Han '/g" ./package/lean/default-settings/files/zzz-default-settings
 sed -i "s/hostname='OpenWrt'/hostname='H.Wang'/g" ./package/base-files/files/bin/config_generate
 #
-rm -rf ./package/lean/luci-theme-argon
+# rm -rf ./package/lean/luci-theme-argon
