@@ -28,5 +28,5 @@ sed -i "s/DISTRIB_DESCRIPTION='OpenWrt '/DISTRIB_DESCRIPTION='OpenWrt by Han '/g
 sed -i "s/hostname='OpenWrt'/hostname='H.Wang'/g" ./package/base-files/files/bin/config_generate
 #
 # rm -rf ./package/lean/luci-theme-argon
-rm -rf ./package/lean/v2ray
-rm -rf ./package/lean/v2ray-plugin
+# rm -rf ./package/lean/v2ray
+# rm -rf ./package/lean/v2ray-plugin
