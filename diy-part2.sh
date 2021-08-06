@@ -21,7 +21,7 @@ sed -i "5i uci set network.lan.type='bridge'" ./package/lean/default-settings/fi
 sed -i "6i uci set network.lan.ifname='eth0 eth1 eth2 eth3'" ./package/lean/default-settings/files/zzz-default-settings  # 网络端口：默认 eth0，第一个接口
 sed -i "7i uci set network.lan.netmask='255.255.255.0'" ./package/lean/default-settings/files/zzz-default-settings    # 子网掩码
 sed -i "8i uci set network.lan.gateway='192.168.10.10'" ./package/lean/default-settings/files/zzz-default-settings  # 默认网关地址（主路由 IP）
-sed -i "9i uci set network.lan.dns='223.5.5.5 114.114.114.114'" ./package/lean/default-settings/files/zzz-default-settings  # 默认上游 DNS 地址
+sed -i "9i uci set network.lan.dns='114.114.114.114 223.5.5.5'" ./package/lean/default-settings/files/zzz-default-settings  # 默认上游 DNS 地址
 sed -i "10i uci commit network\n" ./package/lean/default-settings/files/zzz-default-settings
 #
 sed -i "s/DISTRIB_DESCRIPTION='OpenWrt'/DISTRIB_DESCRIPTION='OpenWrt by Han'/g" ./package/lean/default-settings/files/zzz-default-settings
