@@ -14,6 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
+sed -i '$a src-git diy https://github.com/jaydiao521/diy' feeds.conf.default
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #git clone https://github.com/godros/luci-app-godproxy.git package/luci-app-godproxy
 #git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
