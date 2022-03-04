@@ -13,7 +13,11 @@ sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=5.10/g' ./target/linux/x86/Make
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-sed -i '$a src-git passwall https://github.com/jaydiao521/openwrt-passwall' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+#sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+#sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
+#sed -i '$a src-git diy https://github.com/jaydiao521/diy' feeds.conf.default
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #git clone https://github.com/godros/luci-app-godproxy.git package/luci-app-godproxy
 #git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
