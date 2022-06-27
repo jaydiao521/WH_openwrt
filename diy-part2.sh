@@ -24,6 +24,7 @@ sed -i "8i uci set network.lan.gateway='192.168.10.10'" ./package/lean/default-s
 sed -i "9i uci set network.lan.dns='119.29.29.29 223.5.5.5'" ./package/lean/default-settings/files/zzz-default-settings  # 默认上游 DNS 地址
 sed -i "10i uci commit network\n" ./package/lean/default-settings/files/zzz-default-settings
 #
+sed -i "s/LUCI_DEPENDS:=+mosdns_neo/LUCI_DEPENDS:=+mosdns/g" ./feeds/kenzo/luci-app-mosdns/Makefile
 sed -i "s/DISTRIB_DESCRIPTION='OpenWrt'/DISTRIB_DESCRIPTION='OpenWrt by Han'/g" ./package/lean/default-settings/files/zzz-default-settings
 sed -i "s/hostname='OpenWrt'/hostname='H.W'/g" ./package/base-files/files/bin/config_generate
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/$1$15T8S9pF$4hfjTe2Q8IxjhD0F8gUlw.:18682:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
