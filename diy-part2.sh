@@ -28,6 +28,7 @@ sed -i "10i uci commit network\n" ./package/lean/default-settings/files/zzz-defa
 sed -i "s/DISTRIB_DESCRIPTION='OpenWrt'/DISTRIB_DESCRIPTION='OpenWrt by Han'/g" ./package/lean/default-settings/files/zzz-default-settings
 sed -i "s/hostname='OpenWrt'/hostname='H.W'/g" ./package/base-files/files/bin/config_generate
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/$1$15T8S9pF$4hfjTe2Q8IxjhD0F8gUlw.:18682:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
+sudo rm -rf ./feeds/packages/net/mosdns && cp -rf ./feeds/kenzo/mosdns ./feeds/packages/net/mosdns
 #find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 #find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 # sed -i 's/root::0:0:99999:7:::/root:$1$15T8S9pF$4hfjTe2Q8IxjhD0F8gUlw.:18682:0:99999:7:::/g' package/base-files/files/etc/shadow
