@@ -18,7 +18,7 @@ sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makef
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
+#sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-18.06
 git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
 rm -rf ./feeds/packages/net/smartdns && git clone https://github.com/pymumu/openwrt-smartdns.git feeds/packages/net/smartdns
