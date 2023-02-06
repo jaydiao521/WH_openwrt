@@ -29,9 +29,9 @@ sed -i "s/DISTRIB_DESCRIPTION='OpenWrt'/DISTRIB_DESCRIPTION='OpenWrt by Han'/g" 
 sed -i "s/hostname='OpenWrt'/hostname='H.W'/g" ./package/base-files/files/bin/config_generate
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/$1$15T8S9pF$4hfjTe2Q8IxjhD0F8gUlw.:18682:0:99999:7:::/g' package/lean/default-settings/files/zzz-default-settings
 sudo rm -rf ./feeds/luci/applications/luci-app-mosdns
-sudo rm -rf ./feeds/packages/net/smartdns
-sudo rm -rf ./feeds/packages/net/mosdns
-#sudo rm -rf ./feeds/packages/net/mosdns && cp -rf ./feeds/kenzo/mosdns ./feeds/packages/net/mosdns
+#sudo rm -rf ./feeds/packages/net/smartdns
+sudo rm -rf ./feeds/packages/net/mosdns && cp -rf ./feeds/kenzo/mosdns ./feeds/packages/net/mosdns
+sudo rm -rf ./feeds/packages/net/smartdns && cp -rf ./feeds/kenzo/smartdns ./feeds/packages/net/smartdns
 #sed -i 's/mosdns-neo/mosdns/g' ./feeds/kenzo/luci-app-mosdns/Makefile
 #sed -i 's/mosdns-neo/mosdns/g' ./feeds/kenzo/mosdns/Makefile
 #sed -i 's/mosdns-neo/mosdns/g' ./feeds/packages/net/mosdns/Makefile
