@@ -15,6 +15,7 @@ git clone https://github.com/pymumu/openwrt-smartdns.git package/openwrt-smartdn
 git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall2.git package/luci-app-passwall2
 git clone https://github.com/QiuSimons/openwrt-mos.git package/openwrt-mos
+git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/luci-theme-argon-18.06
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
