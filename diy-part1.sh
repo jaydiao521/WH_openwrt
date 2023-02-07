@@ -9,7 +9,7 @@
 #=============================================================
 
 sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makefile
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages.git' feeds.conf.default
 sed -i '$a src-git helloworld https://github.com/sbwml/openwrt_helloworld.git' feeds.conf.default
 git clone https://github.com/QiuSimons/openwrt-mos.git package/openwrt-mos
 # git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
