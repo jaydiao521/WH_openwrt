@@ -34,6 +34,7 @@ rm -rf ./feeds/luci/applications/luci-app-mosdns
 #rm -rf ./feeds/packages/net/mosdns
 sudo rm -rf ./feeds/packages/net/v2ray-geodata && cp -rf ./feeds/helloworld/v2ray-geodata ./feeds/packages/net/v2ray-geodata
 sudo rm -rf ./feeds/packages/net/mosdns && cp -rf ./package/openwrt-mos/mosdns ./feeds/packages/net/mosdns
+sudo rm -rf ./package/feeds/packages/mosdns && cp -rf ./package/openwrt-mos/mosdns ./package/feeds/packages/mosdns
 sudo rm -rf ./feeds/packages/net/smartdns && cp -rf ./feeds/kenzo/smartdns ./feeds/packages/net/smartdns
 #sudo rm -rf ./feeds/luci/applications/luci-app-mosdns
 #sudo rm -rf ./feeds/packages/net/smartdns
