@@ -37,6 +37,7 @@ sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/$1$15T8S9pF$4hfjTe2Q
 #sudo rm -rf ./feeds/packages/net/mosdns && cp -rf ./package/openwrt-mos/mosdns ./feeds/packages/net/mosdns
 #sudo rm -rf ./package/feeds/packages/mosdns && cp -rf ./package/openwrt-mos/mosdns ./package/feeds/packages/mosdns
 sudo rm -rf ./feeds/packages/net/smartdns && cp -rf ./feeds/kenzo/smartdns ./feeds/packages/net/smartdns
+sudo rm -rf ./feeds/packages/net/mosdns && cp -rf ./feeds/kenzo/mmosdns ./feeds/packages/net/mosdns
 #sudo rm -rf ./feeds/luci/applications/luci-app-mosdns
 #sudo rm -rf ./feeds/packages/net/smartdns
 #sed -i 's/mosdns-neo/mosdns/g' ./feeds/kenzo/luci-app-mosdns/Makefile
