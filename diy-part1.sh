@@ -8,7 +8,7 @@
 # Blog: https://p3terx.com
 #=============================================================
 
-sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makefile
+# sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' ./target/linux/x86/Makefile
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git passwal https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # git clone https://github.com/QiuSimons/openwrt-mos.git package/openwrt-mos
